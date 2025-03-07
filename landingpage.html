@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <title>Uber</title>
+</head>
+<body>
+  <!--Header section-->
+  <header class="header">
+    <div class="container__nav">
+      <h2 class="container__logo">Uber</h2>
+      <nav class="navbar">
+        <ul class="container__lists">
+          <li class="lista"><a class="btn-s" href="#Iniciar_sesion">Inicia sesion</a>
+          </li>
+          <li class="lista"><a class="btn-r" href="#Registrarse">Registrarse</a>
+          </li>
+        </ul>
+        <input id="menu-toggle" type="checkbox" class="checkbox">
+            <label class="hamburger" for="menu-toggle">
+              <i class="fa-solid fa-bars i"></i>
+              <i class="fa-solid fa-xmark i-2"></i>
+            </label>
+        <div class="menu">
+          <ul class="nav__items">
+            <li class="item"><a href="#Viaja" class="link__item">Viaja</a></li>
+            <li class="item"><a href="#Conduce" class="link__item">Conduce</a></li>
+            <li class="item"><a href="#Empresas" class="link__item">Empresas</a></li>
+            <li class="item"><a href="#uber" class="link__item">Uber Eats</a></li>
+            <li class="item"><a href="#Quienes somos" class="link__item">Quienes somos</a></li><li class="item"><a href="#Ayuda" class="link__item">Ayuda</a></li>
+            <li id="pad" class="item"><a class="es" href="#ES"><i class="fa-solid fa-globe mundo"></i>ES</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+    
+    
+    <main class="main__container">
+      <h1 class="titulo">Viaja a cualquier lugar con la app de Uber</h1>
+      <p class="parrafo_principal">Pide un viaje, subete al vehiculo y relajate.</p>
+      <div class="input__container">
+        <div class="input__container-i">
+          <label for="ubicacion">
+            <i class="fa-regular fa-dot-circle circulo"></i>
+            <i class="fa-solid fa-location-arrow arrow"></i>
+          </label>
+          <input id="ubicacion" class="input__item item1" type="text" name="ingrese ubicacion" placeholder="Ingresa una ubicacion">
+        </div>
+        <input class="input__item item2" type="text" name="ingrese destino" placeholder="Ingresa destino">
+      </div>
+      <div class="precios"><a class="btn-p" href="#ver precios">Ver precios</a></div>
+      <picture>
+        <img src="ridewith.jpg">
+      </picture>
+    </main>
+    <section class="container__sugerencias">
+      <h2 class="sugerencias__title">Sugerencias</h2>
+      <div class="sugerencias_card">
+        <div class="separador">
+          <h4 class="sugerencias__subtitle">Flash</h4>
+          <p>Uber hace que la entrega de articulos el mismo dia sea mas facil que nunca.</p>
+          <a href="#detalles">Detalles</a>
+        </div>
+        <div class="image"><img src="Courier.png" alt="courrier">
+        </div>
+      </div> 
+      <div class="sugerencias_card">
+        <div class="separador">
+          <h4 class="sugerencias__subtitle">Reserve</h4>
+          <p>Reserve su viaje con anticipacion para que pueda relajarse ese dia.</p>
+          <a href="#detalles">Detalles</a>
+        </div>
+        <div class="image"><img src="reserve_clock.png" alt="courrier">
+        </div>
+      </div>
+      <div class="sugerencias_card">
+        <div class="separador">
+          <h4 class="sugerencias__subtitle">Viaje</h4>
+          <p>Viaje a cualquier lugar con la app de Uber. pida un viaje, subase y relajese</p>
+          <a href="#detalles">Detalles</a>
+        </div>
+        <div class="image"><img src="ride.png" alt="courrier">
+        </div>
+      </div>
+    </section>
+    <section class="container__sesion">
+      <h2 class="sesion__title">Inica sesion para ver tu actividad reciente</h2>
+      <p class="sesion__subtitle">Consulta viajes anteriores, sugerencias personalizadas, recursos de soporte y mas.</p>
+      <a class="sesion__btn">Inicia sesion con tu cuenta</a>
+      <a class="sesion__link">¿No tienes una cuenta Uber? Registrate<a>
+      <div class="container__img">
+           <img src="Airport-Fall.jpg" alt="airport-arrive">
+      </div>
+    </section>
+    <section class="container__start">
+      <h2 class="sesion__title start-title">Conduce Cuando quieras y genera las ganancias que necesites</h2>
+      <p class="sesion__subtitle">Genera ganancias en tu propio tiempo con entregas, viajes o ambos. Puedes usar tu propio auto u optar por un vehículo de renta a través de la app de Uber.</p>
+      <div class="btns">
+        <a class="sesion__btn">Comenzar</a>
+        <a class="sesion__link">¿Ya tienes una cuenta? Inicar sesion</a>
+      </div>
+      <div class="container__img">
+           <img src="earner-illustra.jpg" alt="driver">
+      </div>
+    </section>
+    <section class="container__start">
+      <h2 class="sesion__title start-title">La misma plataforma de Uber, reinventada para los negocios</h2>
+      <p class="sesion__subtitle">Uber para Empresas es una plataforma con la que las empresas de todos los tamaños pueden gestionar viajes y comidas globales, así como entregas locales.</p>
+      <div class="btns">
+        <a class="sesion__btn">Comenzar</a>
+        <a class="sesion__link">Conoce nuestras soluciones</a>
+      </div>
+      <div class="container__img">
+           <img src="u4b-square.jpg" alt="plain">
+      </div>
+    </section>
+    <section class="container__download">
+      <div class="card__download">
+        <div class="title--uber">Uber</div>
+        <h2 class="download__link"> Descarga la app de Uber</h2>
+        <i class="fa-solid fa-arrow-right flecha"></i>
+
+      </div>
+
+    </section>
+    <footer>
+
+    </footer>
+  
+
+</body>
+</html>
