@@ -40,50 +40,61 @@
     
     
     <main class="main__container">
-      <h1 class="titulo">Viaja a cualquier lugar con la app de Uber</h1>
-      <p class="parrafo_principal">Pide un viaje, subete al vehiculo y relajate.</p>
-      <div class="input__container">
-        <div class="input__container-i">
-          <label for="ubicacion">
-            <i class="fa-regular fa-dot-circle circulo"></i>
-            <i class="fa-solid fa-location-arrow arrow"></i>
-          </label>
-          <input id="ubicacion" class="input__item item1" type="text" name="ingrese ubicacion" placeholder="Ingresa una ubicacion">
+      <div class="main">
+        <h1 class="titulo">Viaja a cualquier lugar con la app de Uber</h1>
+        <p class="parrafo_principal">Pide un viaje, subete al vehiculo y relajate.</p>
+        <div class="input__container">
+          <div class="input__container-i">
+            <label for="ubicacion">
+              <i class="fa-regular fa-dot-circle circulo"></i>
+              <i class="fa-solid fa-location-arrow arrow"></i>
+            </label>
+            <input id="ubicacion" class="input__item item1" type="text" name="ingrese ubicacion" placeholder="Ingresa una ubicacion">
+          </div>
+          <input class="input__item item2" type="text" name="ingrese destino" placeholder="Ingresa destino">
         </div>
-        <input class="input__item item2" type="text" name="ingrese destino" placeholder="Ingresa destino">
+        <div class="precios"><a class="btn-p" href="#ver precios">Ver precios</a>
+        <a class="sesion__link">Inica sesion para ver tu actividad reciente</a>
+        </div>
       </div>
-      <div class="precios"><a class="btn-p" href="#ver precios">Ver precios</a></div>
+      <div class="map">
+        <img src="map.JPG">
+      </div>
       <picture>
         <img src="ridewith.jpg">
       </picture>
+      
     </main>
+    
     <section class="container__sugerencias">
       <h2 class="sugerencias__title">Sugerencias</h2>
-      <div class="sugerencias_card">
-        <div class="separador">
-          <h4 class="sugerencias__subtitle">Flash</h4>
-          <p>Uber hace que la entrega de articulos el mismo dia sea mas facil que nunca.</p>
-          <a href="#detalles">Detalles</a>
+      <div class="sugerencia-box">
+        <div class="sugerencias_card">
+          <div class="separador">
+            <h4 class="sugerencias__subtitle">Flash</h4>
+            <p>Uber hace que la entrega de articulos el mismo dia sea mas facil que nunca.</p>
+            <a href="#detalles">Detalles</a>
+          </div>
+          <div class="image"><img src="Courier.png" alt="courrier">
+          </div>
+        </div> 
+        <div class="sugerencias_card">
+          <div class="separador">
+            <h4 class="sugerencias__subtitle">Reserve</h4>
+            <p>Reserve su viaje con anticipacion para que pueda relajarse ese dia.</p>
+            <a href="#detalles">Detalles</a>
+          </div>
+          <div class="image"><img src="reserve_clock.png" alt="courrier">
+          </div>
         </div>
-        <div class="image"><img src="Courier.png" alt="courrier">
-        </div>
-      </div> 
-      <div class="sugerencias_card">
-        <div class="separador">
-          <h4 class="sugerencias__subtitle">Reserve</h4>
-          <p>Reserve su viaje con anticipacion para que pueda relajarse ese dia.</p>
-          <a href="#detalles">Detalles</a>
-        </div>
-        <div class="image"><img src="reserve_clock.png" alt="courrier">
-        </div>
-      </div>
-      <div class="sugerencias_card">
-        <div class="separador">
-          <h4 class="sugerencias__subtitle">Viaje</h4>
-          <p>Viaje a cualquier lugar con la app de Uber. pida un viaje, subase y relajese</p>
-          <a href="#detalles">Detalles</a>
-        </div>
-        <div class="image"><img src="ride.png" alt="courrier">
+        <div class="sugerencias_card">
+          <div class="separador">
+            <h4 class="sugerencias__subtitle">Viaje</h4>
+            <p>Viaje a cualquier lugar con la app de Uber. pida un viaje, subase y relajese</p>
+            <a href="#detalles">Detalles</a>
+          </div>
+          <div class="image"><img src="ride.png" alt="courrier">
+          </div>
         </div>
       </div>
     </section>
@@ -119,15 +130,67 @@
       </div>
     </section>
     <section class="container__download">
+      <h2 class="sesion__title"> Es mas facil con las apps</h2>
       <div class="card__download">
         <div class="title--uber">Uber</div>
         <h2 class="download__link"> Descarga la app de Uber</h2>
         <i class="fa-solid fa-arrow-right flecha"></i>
-
       </div>
-
     </section>
-    <footer>
+    <section class="container__download">
+      <div class="card__download">
+        <div class="title--uber">Uber</div>
+        <h2 class="download__link"> Descarga la app para socios </h2>
+        <i class="fa-solid fa-arrow-right flecha"></i>
+      </div>
+    </section>
+    <footer class="footer">
+      <h3 class="tit">Uber</h3>
+      <p class="parrafo">Visita el centro de ayuda</p>
+      <div class="container__lista">
+        <h3 class="tit">Compañia</h3>
+        <ul class="list">
+          <li class="list_item">Quienes somos</li>
+          <li class="list_item">Lo que ofremos</li>
+          <li class="list_item">Sala de prensa</li>
+          <li class="list_item">Inversionistas</li>
+          <li class="list_item">Blog</li>
+          <li class="list_item">Oportunidades laborales</li>
+        </ul>
+      </div>
+      <div class="container__lista">
+        <h3 class="tit">Prodcutos</h3>
+        <ul class="list">
+          <li class="list_item">Viaja</li>
+          <li class="list_item">Conduce</li>
+          <li class="list_item">Comida</li>
+          <li class="list_item">Uber para Empresas</li>
+          <li class="list_item">Uber Freight</li>
+          <li class="list_item">Tarjetas de regalo</li>
+        </ul>
+      </div>
+      <div class="container__lista">
+        <h3 class="tit">Ciudadania global</h3>
+        <ul class="list">
+          <li class="list_item">Seguridad</li>
+          <li class="list_item">Sostenibilidad</li>
+        </ul>
+      </div>
+      <div class="container__lista">
+        <h3 class="tit">Viajes</h3>
+        <ul class="list">
+          <li class="list_item">Reserva</li>
+          <li class="list_item">Aereopuertos</li>
+          <li class="list_item">Ciudades</li>
+        </ul>
+      </div>
+      <div class="iconos">
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-x-twitter"></i>
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fa-brands fa-facebook"></i>
+      </div>
 
     </footer>
   

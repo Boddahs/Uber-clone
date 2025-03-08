@@ -192,10 +192,14 @@ label .i-2{
     background: black;
     padding-bottom: 40px;
 }
+.map{
+    display: none;
+}
+
 .titulo{
     text-wrap: pretty;
     color: white;
-    letter-spacing: 1.2px;
+    letter-spacing: 1.1px;
     font-weight: 500;
     font-size: 2.3rem;
     padding: 20px 25px 15px 25px;
@@ -204,7 +208,7 @@ label .i-2{
     color: rgb(240, 232, 232);
     letter-spacing: 1.2px;
     font-weight: 500;
-    font-size: 1rem;
+    font-size: .9rem;
     padding: 15px 25px;
 }
 .input__container{
@@ -216,7 +220,7 @@ label .i-2{
     padding: 0px 25px;
 }
 .input__item{
-    font-size: 1rem;
+    font-size: .9rem;
     border-radius: 7px;
     padding: 10px 10px 10px 50px;
     border: 2px solid black;
@@ -266,7 +270,7 @@ label .i-2{
     color:black;
     border-radius: 15px;
     letter-spacing: 1.2px;
-    font-size: 1rem;
+    font-size: .9rem;
     font-weight: 500;
     padding: 10px 15px;
     background: white;
@@ -292,7 +296,62 @@ img{
     object-fit: cover;
     border-radius: 8px;
 }
-/*ends/*
+.precios .sesion__link{
+    display: none;
+}
+.sugerencia-box{
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+}
+/*ends*/
+@media (min-width: 820px)
+{
+    .main__container{
+        background: white;
+        padding: 25px;
+
+    }
+    .sugerencia-box{
+        flex-direction: row;
+    }
+    .precios .sesion__link{
+        display: flex;
+    }
+    .titulo, .parrafo_principal{
+        color: black;
+    }
+    .map{
+        display: flex;
+        object-fit: cover;
+        width: 85%;
+    }
+    .btn-p{
+        background: black;
+        color: white;
+        max-width:30% ;
+    }
+    .btn-p:hover{
+        background: rgba(7, 7, 7, 0.918);
+
+    }
+    .precios{
+        display: flex;
+        flex-direction: column;
+        gap:10px;
+    }
+    .main__container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .main{
+        min-width: calc(30%);
+    }
+    picture{
+        display: none;
+    }
+    
+}
 
 /*second section*/
 .container__sugerencias{
@@ -306,7 +365,7 @@ img{
 .sugerencias_card{
     background: rgba(235, 232, 232, 0.568);
     border-radius: 10px;
-    padding: 15px 15px 20px 15px;
+    padding: 12px 15px 12px 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -344,7 +403,7 @@ img{
     object-fit: cover;
 }
 .image img{
-    width: 140px;
+    width: 120px;
 }
 .separador > a:hover{
     background: rgb(252, 249, 249);
@@ -458,7 +517,8 @@ img{
     justify-content: center;
     background: rgb(245, 244, 244);
     align-items: center;
-    padding: 50px 25px;
+    gap: 10px;
+    padding: 20px 25px 10px 25px;
     margin: auto;
 }
 .card__download{
@@ -466,36 +526,92 @@ img{
     width: 100%;
     min-height: 100px;
     max-height: 150px;
-    padding: 20px 10px;
+    padding: 20px 20px 20px 10px;
+    gap: 10px;
     display: flex;
     align-items: center;
     border: 1px solid rgb(230, 224, 224);
     background: white;
-    justify-content: stretch;
+    justify-content: space-between;
+    cursor: pointer;
   
 }
 .download__link{
     font-size: 1.2rem;
     font-weight: bold;
-    text-align: center;
+    width: fit-content;
 }
 .flecha{
     text-align: center;
     font-size: 1.3rem;
     cursor: pointer;
     margin-top: 5px;
-    transition: transform 0.7s ease-in-out;
+    transition: transform 0.6s ease-in-out;
 }
-.flecha:hover{
-    transform: translateX(20px) ;
+.card__download:hover .flecha{
+    transform: translateX(10px) ;
 }
-
 
 .title--uber{
     background: black;
     color: white;
-    padding: 25px 18px;
+    padding: 15px 10px;
     font-weight: 500;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     border-radius: 12px;
+}
+/*ends download section*/
+
+/*footer section*/
+.footer{
+    color: white;
+    padding: 50px 25px 10px 25px;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    letter-spacing: .5px;
+    line-height: 1.8;
+}
+.tit{
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+.list_item{
+    width: fit-content;
+}
+.parrafo{
+    width: fit-content;
+}
+.parrafo:hover{
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    cursor: pointer;
+    color: rgba(221, 217, 217, 0.808);
+}
+.list_item:hover{
+    cursor: pointer;
+    color: rgba(221, 217, 217, 0.808);
+    
+
+}
+.iconos{
+    display: flex;
+    justify-content: start;
+    gap: 1.8rem;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 20px;
+}
+.iconos i {
+    padding: 15px;
+    border-radius: 10px;
+}
+.iconos i:hover{
+    background: rgba(90, 88, 88, 0.808);
+    cursor: pointer;
+
+}
+html{
+    scroll-behavior: smooth;
 }
