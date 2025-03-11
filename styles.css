@@ -218,7 +218,10 @@ label .i-2{
     width: 100%;
     gap: 10px;
     padding: 0px 25px;
+    max-width:550px;
+
 }
+
 .input__item{
     font-size: .9rem;
     border-radius: 7px;
@@ -305,12 +308,15 @@ img{
     gap:30px;
 }
 /*ends*/
-@media (min-width: 820px)
+@media (min-width: 920px)
 {
     .main__container{
         background: white;
         padding: 25px;
 
+    }
+    .input__container{
+        
     }
     .sugerencia-box{
         flex-direction: row;
@@ -388,7 +394,8 @@ img{
 .separador > a{
     font-size: 0.9rem;
     padding: 10px 10px;
-    width: 50%;
+    min-width: 30%;
+    max-width: 60%;
     background: rgba(255, 255, 255, 0.952);
     text-align: center;
     color: black;
